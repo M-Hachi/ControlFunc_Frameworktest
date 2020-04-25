@@ -8,12 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		4EBA80882454014C00FC95C4 /* ControlFunc_Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EBA80862454014C00FC95C4 /* ControlFunc_Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EBA808F2454016000FC95C4 /* conversion_func.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA808E2454016000FC95C4 /* conversion_func.swift */; };
+		4EBA80A924540BAA00FC95C4 /* FindHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80A824540BAA00FC95C4 /* FindHub.swift */; };
+		4EBA80AB24540C8400FC95C4 /* custom_func.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80AA24540C8400FC95C4 /* custom_func.swift */; };
+		4EBA80AD24540CF200FC95C4 /* PortInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80AC24540CF200FC95C4 /* PortInformation.swift */; };
+		4EBA80AF24540D2C00FC95C4 /* HubProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80AE24540D2C00FC95C4 /* HubProperties.swift */; };
+		4EBA80B124540D5700FC95C4 /* HubAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80B024540D5700FC95C4 /* HubAlerts.swift */; };
+		4EBA80B324540D9100FC95C4 /* HubActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80B224540D9100FC95C4 /* HubActions.swift */; };
+		4EBA80B524540DBE00FC95C4 /* PortInputFormatSetup(Single).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80B424540DBE00FC95C4 /* PortInputFormatSetup(Single).swift */; };
+		4EBA80B724540DEB00FC95C4 /* WriteDirectModeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80B624540DEB00FC95C4 /* WriteDirectModeData.swift */; };
+		4EBA80B924540E2700FC95C4 /* PortModeInformationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80B824540E2700FC95C4 /* PortModeInformationRequest.swift */; };
+		4EBA80BB24540E4F00FC95C4 /* GenericErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80BA24540E4F00FC95C4 /* GenericErrorMessages.swift */; };
+		4EBA80BD24540E6300FC95C4 /* PortModeInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80BC24540E6300FC95C4 /* PortModeInformation.swift */; };
+		4EBA80BF24540E7A00FC95C4 /* PortValue(Single).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80BE24540E7A00FC95C4 /* PortValue(Single).swift */; };
+		4EBA80C124540E9200FC95C4 /* PortInputFormat(Single).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80C024540E9200FC95C4 /* PortInputFormat(Single).swift */; };
+		4EBA80C324540EBA00FC95C4 /* PortOutputCommandFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80C224540EBA00FC95C4 /* PortOutputCommandFeedback.swift */; };
+		4EBA80C524540F7C00FC95C4 /* Hub_Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80C424540F7C00FC95C4 /* Hub_Structs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4EBA80832454014C00FC95C4 /* ControlFunc_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ControlFunc_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EBA80862454014C00FC95C4 /* ControlFunc_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ControlFunc_Framework.h; sourceTree = "<group>"; };
 		4EBA80872454014C00FC95C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EBA808E2454016000FC95C4 /* conversion_func.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = conversion_func.swift; sourceTree = "<group>"; };
+		4EBA80A824540BAA00FC95C4 /* FindHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindHub.swift; sourceTree = "<group>"; };
+		4EBA80AA24540C8400FC95C4 /* custom_func.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = custom_func.swift; path = "../../Control-Function/Control-Function/custom_func.swift"; sourceTree = "<group>"; };
+		4EBA80AC24540CF200FC95C4 /* PortInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortInformation.swift; sourceTree = "<group>"; };
+		4EBA80AE24540D2C00FC95C4 /* HubProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubProperties.swift; sourceTree = "<group>"; };
+		4EBA80B024540D5700FC95C4 /* HubAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubAlerts.swift; sourceTree = "<group>"; };
+		4EBA80B224540D9100FC95C4 /* HubActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubActions.swift; sourceTree = "<group>"; };
+		4EBA80B424540DBE00FC95C4 /* PortInputFormatSetup(Single).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PortInputFormatSetup(Single).swift"; sourceTree = "<group>"; };
+		4EBA80B624540DEB00FC95C4 /* WriteDirectModeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteDirectModeData.swift; sourceTree = "<group>"; };
+		4EBA80B824540E2700FC95C4 /* PortModeInformationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortModeInformationRequest.swift; sourceTree = "<group>"; };
+		4EBA80BA24540E4F00FC95C4 /* GenericErrorMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericErrorMessages.swift; sourceTree = "<group>"; };
+		4EBA80BC24540E6300FC95C4 /* PortModeInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortModeInformation.swift; sourceTree = "<group>"; };
+		4EBA80BE24540E7A00FC95C4 /* PortValue(Single).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PortValue(Single).swift"; sourceTree = "<group>"; };
+		4EBA80C024540E9200FC95C4 /* PortInputFormat(Single).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PortInputFormat(Single).swift"; sourceTree = "<group>"; };
+		4EBA80C224540EBA00FC95C4 /* PortOutputCommandFeedback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortOutputCommandFeedback.swift; sourceTree = "<group>"; };
+		4EBA80C424540F7C00FC95C4 /* Hub_Structs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hub_Structs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +78,22 @@
 		4EBA80852454014C00FC95C4 /* ControlFunc_Framework */ = {
 			isa = PBXGroup;
 			children = (
+				4EBA80A824540BAA00FC95C4 /* FindHub.swift */,
+				4EBA80C424540F7C00FC95C4 /* Hub_Structs.swift */,
+				4EBA808E2454016000FC95C4 /* conversion_func.swift */,
+				4EBA80AA24540C8400FC95C4 /* custom_func.swift */,
+				4EBA80AC24540CF200FC95C4 /* PortInformation.swift */,
+				4EBA80AE24540D2C00FC95C4 /* HubProperties.swift */,
+				4EBA80B224540D9100FC95C4 /* HubActions.swift */,
+				4EBA80B424540DBE00FC95C4 /* PortInputFormatSetup(Single).swift */,
+				4EBA80B624540DEB00FC95C4 /* WriteDirectModeData.swift */,
+				4EBA80B824540E2700FC95C4 /* PortModeInformationRequest.swift */,
+				4EBA80C224540EBA00FC95C4 /* PortOutputCommandFeedback.swift */,
+				4EBA80C024540E9200FC95C4 /* PortInputFormat(Single).swift */,
+				4EBA80BE24540E7A00FC95C4 /* PortValue(Single).swift */,
+				4EBA80BC24540E6300FC95C4 /* PortModeInformation.swift */,
+				4EBA80BA24540E4F00FC95C4 /* GenericErrorMessages.swift */,
+				4EBA80B024540D5700FC95C4 /* HubAlerts.swift */,
 				4EBA80862454014C00FC95C4 /* ControlFunc_Framework.h */,
 				4EBA80872454014C00FC95C4 /* Info.plist */,
 			);
@@ -95,6 +143,7 @@
 				TargetAttributes = {
 					4EBA80822454014C00FC95C4 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -131,6 +180,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EBA80BD24540E6300FC95C4 /* PortModeInformation.swift in Sources */,
+				4EBA80B724540DEB00FC95C4 /* WriteDirectModeData.swift in Sources */,
+				4EBA80C524540F7C00FC95C4 /* Hub_Structs.swift in Sources */,
+				4EBA80A924540BAA00FC95C4 /* FindHub.swift in Sources */,
+				4EBA80B924540E2700FC95C4 /* PortModeInformationRequest.swift in Sources */,
+				4EBA808F2454016000FC95C4 /* conversion_func.swift in Sources */,
+				4EBA80B124540D5700FC95C4 /* HubAlerts.swift in Sources */,
+				4EBA80B524540DBE00FC95C4 /* PortInputFormatSetup(Single).swift in Sources */,
+				4EBA80AB24540C8400FC95C4 /* custom_func.swift in Sources */,
+				4EBA80AD24540CF200FC95C4 /* PortInformation.swift in Sources */,
+				4EBA80C324540EBA00FC95C4 /* PortOutputCommandFeedback.swift in Sources */,
+				4EBA80B324540D9100FC95C4 /* HubActions.swift in Sources */,
+				4EBA80BF24540E7A00FC95C4 /* PortValue(Single).swift in Sources */,
+				4EBA80C124540E9200FC95C4 /* PortInputFormat(Single).swift in Sources */,
+				4EBA80AF24540D2C00FC95C4 /* HubProperties.swift in Sources */,
+				4EBA80BB24540E4F00FC95C4 /* GenericErrorMessages.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +325,7 @@
 		4EBA808C2454014C00FC95C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = DG8VYSCKG3;
@@ -268,6 +334,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ControlFunc_Framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -276,6 +343,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.01.ControlFunc-Framework";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +352,7 @@
 		4EBA808D2454014C00FC95C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = DG8VYSCKG3;
@@ -292,6 +361,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ControlFunc_Framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
