@@ -100,7 +100,6 @@ public class FindHub: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate  
             print(legohub.Peripheral)
             print("connection.No = \(connection.No)")
             
-            
             connection.Status[connection.No]=1 //接続できたことを記録
             DidConnectToHub(HubID:connection.No)
             //setNotifyValue( true, for: characteristic )
@@ -108,8 +107,6 @@ public class FindHub: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate  
             //HubPropertiesSet(Hub: connection.No, Reference: 0x06, Operation: 0x05)
             //HubPropertiesSet(Hub: connection.No, Reference: 0x06, Operation: 0x02)
             HubProperties_Downstream(HubId: connection.No, HubPropertyReference: 0x06, HubPropertyOperation: 0x02)
-            
-            
         }
     }
     
@@ -181,6 +178,40 @@ public class FindHub: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate  
     }
 }
 
+public class LegoHubManager{
+    public var centralManager : CBCentralManager!
+    public var bleHandler : FindHub // delegate
+    
+    public var Characteristic : CBCharacteristic?
+    public var Peripheral : CBPeripheral?
+    public var Identifier : UUID?
+    
+    public var Button : Bool = false
+    public var Battery :Int = 0
+    
+    public var alert: UIAlertController!
+    public func alert_hub(SwiftView: UIViewController, No:Int) {
+        self.alert = UIAlertController(title: "Scanning...", message: "Press button on hub \(No).", preferredStyle: .alert)
+        self.alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler:{
+            (action: UIAlertAction!) -> Void in
+            //Cancelが押された時の処理
+            print("Switch turned Off")
+            
+            self.centralManager.stopScan()
+        }))
+        SwiftView.present(self.alert, animated: true, completion: nil)
+    }
+    public func closeAlert() {
+        self.alert.dismiss(animated: true, completion: nil)
+    }
+    
+    public init() {
+        self.bleHandler = FindHub()
+        self.centralManager = CBCentralManager(delegate: self.bleHandler, queue:       nil)
+        self.Characteristic = nil
+        self.Peripheral = nil
+    }
+}
 
 //legohubの中身を配列にする
 //CBCharacteristicの初期値を設定できないのでlegohubを配列にはできない？

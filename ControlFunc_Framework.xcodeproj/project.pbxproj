@@ -12,7 +12,7 @@
 		4EBA80A924540BAA00FC95C4 /* FindHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80A824540BAA00FC95C4 /* FindHub.swift */; };
 		4EBA80AB24540C8400FC95C4 /* custom_func.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80AA24540C8400FC95C4 /* custom_func.swift */; };
 		4EBA80AD24540CF200FC95C4 /* PortInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80AC24540CF200FC95C4 /* PortInformation.swift */; };
-		4EBA80AF24540D2C00FC95C4 /* HubProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80AE24540D2C00FC95C4 /* HubProperties.swift */; };
+		4EBA80AF24540D2C00FC95C4 /* 01_HubProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80AE24540D2C00FC95C4 /* 01_HubProperties.swift */; };
 		4EBA80B124540D5700FC95C4 /* HubAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80B024540D5700FC95C4 /* HubAlerts.swift */; };
 		4EBA80B324540D9100FC95C4 /* HubActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80B224540D9100FC95C4 /* HubActions.swift */; };
 		4EBA80B524540DBE00FC95C4 /* PortInputFormatSetup(Single).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80B424540DBE00FC95C4 /* PortInputFormatSetup(Single).swift */; };
@@ -34,7 +34,7 @@
 		4EBA80A824540BAA00FC95C4 /* FindHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindHub.swift; sourceTree = "<group>"; };
 		4EBA80AA24540C8400FC95C4 /* custom_func.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = custom_func.swift; path = "../../Control-Function/Control-Function/custom_func.swift"; sourceTree = "<group>"; };
 		4EBA80AC24540CF200FC95C4 /* PortInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortInformation.swift; sourceTree = "<group>"; };
-		4EBA80AE24540D2C00FC95C4 /* HubProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubProperties.swift; sourceTree = "<group>"; };
+		4EBA80AE24540D2C00FC95C4 /* 01_HubProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 01_HubProperties.swift; sourceTree = "<group>"; };
 		4EBA80B024540D5700FC95C4 /* HubAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubAlerts.swift; sourceTree = "<group>"; };
 		4EBA80B224540D9100FC95C4 /* HubActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubActions.swift; sourceTree = "<group>"; };
 		4EBA80B424540DBE00FC95C4 /* PortInputFormatSetup(Single).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PortInputFormatSetup(Single).swift"; sourceTree = "<group>"; };
@@ -82,9 +82,9 @@
 				4EBA80C424540F7C00FC95C4 /* Hub_Structs.swift */,
 				4EBA808E2454016000FC95C4 /* conversion_func.swift */,
 				4EBA80AA24540C8400FC95C4 /* custom_func.swift */,
-				4EBA80AC24540CF200FC95C4 /* PortInformation.swift */,
-				4EBA80AE24540D2C00FC95C4 /* HubProperties.swift */,
+				4EBA80AE24540D2C00FC95C4 /* 01_HubProperties.swift */,
 				4EBA80B224540D9100FC95C4 /* HubActions.swift */,
+				4EBA80AC24540CF200FC95C4 /* PortInformation.swift */,
 				4EBA80B424540DBE00FC95C4 /* PortInputFormatSetup(Single).swift */,
 				4EBA80B624540DEB00FC95C4 /* WriteDirectModeData.swift */,
 				4EBA80B824540E2700FC95C4 /* PortModeInformationRequest.swift */,
@@ -194,7 +194,7 @@
 				4EBA80B324540D9100FC95C4 /* HubActions.swift in Sources */,
 				4EBA80BF24540E7A00FC95C4 /* PortValue(Single).swift in Sources */,
 				4EBA80C124540E9200FC95C4 /* PortInputFormat(Single).swift in Sources */,
-				4EBA80AF24540D2C00FC95C4 /* HubProperties.swift in Sources */,
+				4EBA80AF24540D2C00FC95C4 /* 01_HubProperties.swift in Sources */,
 				4EBA80BB24540E4F00FC95C4 /* GenericErrorMessages.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
