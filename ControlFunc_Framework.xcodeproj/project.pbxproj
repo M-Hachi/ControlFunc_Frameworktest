@@ -7,44 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EA6771224558B990034F9DC /* 04_HubAttatchedIo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6771124558B990034F9DC /* 04_HubAttatchedIo.swift */; };
+		4EA6771424558BCE0034F9DC /* 21_PortInformationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6771324558BCE0034F9DC /* 21_PortInformationRequest.swift */; };
+		4EA6771624558BF40034F9DC /* 42_PortInputFormatSetup(CombinedMode).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6771524558BF40034F9DC /* 42_PortInputFormatSetup(CombinedMode).swift */; };
+		4EA6771824558C2C0034F9DC /* 48_PortInputFormat(CombinedMode).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6771724558C2C0034F9DC /* 48_PortInputFormat(CombinedMode).swift */; };
+		4EA6771A24558C4D0034F9DC /* 61_VirtualPortSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6771924558C4D0034F9DC /* 61_VirtualPortSetup.swift */; };
+		4EA6771C24558C790034F9DC /* 81_PortOutputCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6771B24558C790034F9DC /* 81_PortOutputCommand.swift */; };
 		4EBA80882454014C00FC95C4 /* ControlFunc_Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EBA80862454014C00FC95C4 /* ControlFunc_Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4EBA808F2454016000FC95C4 /* conversion_func.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA808E2454016000FC95C4 /* conversion_func.swift */; };
 		4EBA80A924540BAA00FC95C4 /* FindHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80A824540BAA00FC95C4 /* FindHub.swift */; };
 		4EBA80AB24540C8400FC95C4 /* custom_func.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80AA24540C8400FC95C4 /* custom_func.swift */; };
-		4EBA80AD24540CF200FC95C4 /* PortInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80AC24540CF200FC95C4 /* PortInformation.swift */; };
+		4EBA80AD24540CF200FC95C4 /* 43_PortInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80AC24540CF200FC95C4 /* 43_PortInformation.swift */; };
 		4EBA80AF24540D2C00FC95C4 /* 01_HubProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80AE24540D2C00FC95C4 /* 01_HubProperties.swift */; };
-		4EBA80B124540D5700FC95C4 /* HubAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80B024540D5700FC95C4 /* HubAlerts.swift */; };
-		4EBA80B324540D9100FC95C4 /* HubActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80B224540D9100FC95C4 /* HubActions.swift */; };
-		4EBA80B524540DBE00FC95C4 /* PortInputFormatSetup(Single).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80B424540DBE00FC95C4 /* PortInputFormatSetup(Single).swift */; };
-		4EBA80B724540DEB00FC95C4 /* WriteDirectModeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80B624540DEB00FC95C4 /* WriteDirectModeData.swift */; };
-		4EBA80B924540E2700FC95C4 /* PortModeInformationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80B824540E2700FC95C4 /* PortModeInformationRequest.swift */; };
-		4EBA80BB24540E4F00FC95C4 /* GenericErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80BA24540E4F00FC95C4 /* GenericErrorMessages.swift */; };
-		4EBA80BD24540E6300FC95C4 /* PortModeInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80BC24540E6300FC95C4 /* PortModeInformation.swift */; };
-		4EBA80BF24540E7A00FC95C4 /* PortValue(Single).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80BE24540E7A00FC95C4 /* PortValue(Single).swift */; };
-		4EBA80C124540E9200FC95C4 /* PortInputFormat(Single).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80C024540E9200FC95C4 /* PortInputFormat(Single).swift */; };
-		4EBA80C324540EBA00FC95C4 /* PortOutputCommandFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80C224540EBA00FC95C4 /* PortOutputCommandFeedback.swift */; };
+		4EBA80B124540D5700FC95C4 /* 03_HubAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80B024540D5700FC95C4 /* 03_HubAlerts.swift */; };
+		4EBA80B324540D9100FC95C4 /* 02_HubActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80B224540D9100FC95C4 /* 02_HubActions.swift */; };
+		4EBA80B524540DBE00FC95C4 /* 41_PortInputFormatSetup(Single).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80B424540DBE00FC95C4 /* 41_PortInputFormatSetup(Single).swift */; };
+		4EBA80B724540DEB00FC95C4 /* 81_WriteDirectModeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80B624540DEB00FC95C4 /* 81_WriteDirectModeData.swift */; };
+		4EBA80B924540E2700FC95C4 /* 22_PortModeInformationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80B824540E2700FC95C4 /* 22_PortModeInformationRequest.swift */; };
+		4EBA80BB24540E4F00FC95C4 /* 05_GenericErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80BA24540E4F00FC95C4 /* 05_GenericErrorMessages.swift */; };
+		4EBA80BD24540E6300FC95C4 /* 44_PortModeInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80BC24540E6300FC95C4 /* 44_PortModeInformation.swift */; };
+		4EBA80BF24540E7A00FC95C4 /* 45_PortValue(Single).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80BE24540E7A00FC95C4 /* 45_PortValue(Single).swift */; };
+		4EBA80C124540E9200FC95C4 /* 47_PortInputFormat(Single).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80C024540E9200FC95C4 /* 47_PortInputFormat(Single).swift */; };
+		4EBA80C324540EBA00FC95C4 /* 82_PortOutputCommandFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80C224540EBA00FC95C4 /* 82_PortOutputCommandFeedback.swift */; };
 		4EBA80C524540F7C00FC95C4 /* Hub_Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA80C424540F7C00FC95C4 /* Hub_Structs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4EA6771124558B990034F9DC /* 04_HubAttatchedIo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 04_HubAttatchedIo.swift; sourceTree = "<group>"; };
+		4EA6771324558BCE0034F9DC /* 21_PortInformationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 21_PortInformationRequest.swift; sourceTree = "<group>"; };
+		4EA6771524558BF40034F9DC /* 42_PortInputFormatSetup(CombinedMode).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "42_PortInputFormatSetup(CombinedMode).swift"; sourceTree = "<group>"; };
+		4EA6771724558C2C0034F9DC /* 48_PortInputFormat(CombinedMode).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "48_PortInputFormat(CombinedMode).swift"; sourceTree = "<group>"; };
+		4EA6771924558C4D0034F9DC /* 61_VirtualPortSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 61_VirtualPortSetup.swift; sourceTree = "<group>"; };
+		4EA6771B24558C790034F9DC /* 81_PortOutputCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 81_PortOutputCommand.swift; sourceTree = "<group>"; };
 		4EBA80832454014C00FC95C4 /* ControlFunc_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ControlFunc_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EBA80862454014C00FC95C4 /* ControlFunc_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ControlFunc_Framework.h; sourceTree = "<group>"; };
 		4EBA80872454014C00FC95C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EBA808E2454016000FC95C4 /* conversion_func.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = conversion_func.swift; sourceTree = "<group>"; };
 		4EBA80A824540BAA00FC95C4 /* FindHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindHub.swift; sourceTree = "<group>"; };
 		4EBA80AA24540C8400FC95C4 /* custom_func.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = custom_func.swift; path = "../../Control-Function/Control-Function/custom_func.swift"; sourceTree = "<group>"; };
-		4EBA80AC24540CF200FC95C4 /* PortInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortInformation.swift; sourceTree = "<group>"; };
+		4EBA80AC24540CF200FC95C4 /* 43_PortInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 43_PortInformation.swift; sourceTree = "<group>"; };
 		4EBA80AE24540D2C00FC95C4 /* 01_HubProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 01_HubProperties.swift; sourceTree = "<group>"; };
-		4EBA80B024540D5700FC95C4 /* HubAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubAlerts.swift; sourceTree = "<group>"; };
-		4EBA80B224540D9100FC95C4 /* HubActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubActions.swift; sourceTree = "<group>"; };
-		4EBA80B424540DBE00FC95C4 /* PortInputFormatSetup(Single).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PortInputFormatSetup(Single).swift"; sourceTree = "<group>"; };
-		4EBA80B624540DEB00FC95C4 /* WriteDirectModeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteDirectModeData.swift; sourceTree = "<group>"; };
-		4EBA80B824540E2700FC95C4 /* PortModeInformationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortModeInformationRequest.swift; sourceTree = "<group>"; };
-		4EBA80BA24540E4F00FC95C4 /* GenericErrorMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericErrorMessages.swift; sourceTree = "<group>"; };
-		4EBA80BC24540E6300FC95C4 /* PortModeInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortModeInformation.swift; sourceTree = "<group>"; };
-		4EBA80BE24540E7A00FC95C4 /* PortValue(Single).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PortValue(Single).swift"; sourceTree = "<group>"; };
-		4EBA80C024540E9200FC95C4 /* PortInputFormat(Single).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PortInputFormat(Single).swift"; sourceTree = "<group>"; };
-		4EBA80C224540EBA00FC95C4 /* PortOutputCommandFeedback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortOutputCommandFeedback.swift; sourceTree = "<group>"; };
+		4EBA80B024540D5700FC95C4 /* 03_HubAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 03_HubAlerts.swift; sourceTree = "<group>"; };
+		4EBA80B224540D9100FC95C4 /* 02_HubActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 02_HubActions.swift; sourceTree = "<group>"; };
+		4EBA80B424540DBE00FC95C4 /* 41_PortInputFormatSetup(Single).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "41_PortInputFormatSetup(Single).swift"; sourceTree = "<group>"; };
+		4EBA80B624540DEB00FC95C4 /* 81_WriteDirectModeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 81_WriteDirectModeData.swift; sourceTree = "<group>"; };
+		4EBA80B824540E2700FC95C4 /* 22_PortModeInformationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 22_PortModeInformationRequest.swift; sourceTree = "<group>"; };
+		4EBA80BA24540E4F00FC95C4 /* 05_GenericErrorMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 05_GenericErrorMessages.swift; sourceTree = "<group>"; };
+		4EBA80BC24540E6300FC95C4 /* 44_PortModeInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 44_PortModeInformation.swift; sourceTree = "<group>"; };
+		4EBA80BE24540E7A00FC95C4 /* 45_PortValue(Single).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "45_PortValue(Single).swift"; sourceTree = "<group>"; };
+		4EBA80C024540E9200FC95C4 /* 47_PortInputFormat(Single).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "47_PortInputFormat(Single).swift"; sourceTree = "<group>"; };
+		4EBA80C224540EBA00FC95C4 /* 82_PortOutputCommandFeedback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 82_PortOutputCommandFeedback.swift; sourceTree = "<group>"; };
 		4EBA80C424540F7C00FC95C4 /* Hub_Structs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hub_Structs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,17 +95,23 @@
 				4EBA808E2454016000FC95C4 /* conversion_func.swift */,
 				4EBA80AA24540C8400FC95C4 /* custom_func.swift */,
 				4EBA80AE24540D2C00FC95C4 /* 01_HubProperties.swift */,
-				4EBA80B224540D9100FC95C4 /* HubActions.swift */,
-				4EBA80AC24540CF200FC95C4 /* PortInformation.swift */,
-				4EBA80B424540DBE00FC95C4 /* PortInputFormatSetup(Single).swift */,
-				4EBA80B624540DEB00FC95C4 /* WriteDirectModeData.swift */,
-				4EBA80B824540E2700FC95C4 /* PortModeInformationRequest.swift */,
-				4EBA80C224540EBA00FC95C4 /* PortOutputCommandFeedback.swift */,
-				4EBA80C024540E9200FC95C4 /* PortInputFormat(Single).swift */,
-				4EBA80BE24540E7A00FC95C4 /* PortValue(Single).swift */,
-				4EBA80BC24540E6300FC95C4 /* PortModeInformation.swift */,
-				4EBA80BA24540E4F00FC95C4 /* GenericErrorMessages.swift */,
-				4EBA80B024540D5700FC95C4 /* HubAlerts.swift */,
+				4EBA80B224540D9100FC95C4 /* 02_HubActions.swift */,
+				4EBA80B024540D5700FC95C4 /* 03_HubAlerts.swift */,
+				4EA6771124558B990034F9DC /* 04_HubAttatchedIo.swift */,
+				4EBA80BA24540E4F00FC95C4 /* 05_GenericErrorMessages.swift */,
+				4EA6771324558BCE0034F9DC /* 21_PortInformationRequest.swift */,
+				4EBA80B824540E2700FC95C4 /* 22_PortModeInformationRequest.swift */,
+				4EBA80B424540DBE00FC95C4 /* 41_PortInputFormatSetup(Single).swift */,
+				4EA6771524558BF40034F9DC /* 42_PortInputFormatSetup(CombinedMode).swift */,
+				4EBA80AC24540CF200FC95C4 /* 43_PortInformation.swift */,
+				4EBA80BC24540E6300FC95C4 /* 44_PortModeInformation.swift */,
+				4EBA80BE24540E7A00FC95C4 /* 45_PortValue(Single).swift */,
+				4EBA80C024540E9200FC95C4 /* 47_PortInputFormat(Single).swift */,
+				4EA6771724558C2C0034F9DC /* 48_PortInputFormat(CombinedMode).swift */,
+				4EA6771924558C4D0034F9DC /* 61_VirtualPortSetup.swift */,
+				4EA6771B24558C790034F9DC /* 81_PortOutputCommand.swift */,
+				4EBA80B624540DEB00FC95C4 /* 81_WriteDirectModeData.swift */,
+				4EBA80C224540EBA00FC95C4 /* 82_PortOutputCommandFeedback.swift */,
 				4EBA80862454014C00FC95C4 /* ControlFunc_Framework.h */,
 				4EBA80872454014C00FC95C4 /* Info.plist */,
 			);
@@ -180,22 +198,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EBA80BD24540E6300FC95C4 /* PortModeInformation.swift in Sources */,
-				4EBA80B724540DEB00FC95C4 /* WriteDirectModeData.swift in Sources */,
+				4EBA80BD24540E6300FC95C4 /* 44_PortModeInformation.swift in Sources */,
+				4EA6771C24558C790034F9DC /* 81_PortOutputCommand.swift in Sources */,
+				4EBA80B724540DEB00FC95C4 /* 81_WriteDirectModeData.swift in Sources */,
 				4EBA80C524540F7C00FC95C4 /* Hub_Structs.swift in Sources */,
 				4EBA80A924540BAA00FC95C4 /* FindHub.swift in Sources */,
-				4EBA80B924540E2700FC95C4 /* PortModeInformationRequest.swift in Sources */,
+				4EBA80B924540E2700FC95C4 /* 22_PortModeInformationRequest.swift in Sources */,
 				4EBA808F2454016000FC95C4 /* conversion_func.swift in Sources */,
-				4EBA80B124540D5700FC95C4 /* HubAlerts.swift in Sources */,
-				4EBA80B524540DBE00FC95C4 /* PortInputFormatSetup(Single).swift in Sources */,
+				4EBA80B124540D5700FC95C4 /* 03_HubAlerts.swift in Sources */,
+				4EBA80B524540DBE00FC95C4 /* 41_PortInputFormatSetup(Single).swift in Sources */,
+				4EA6771624558BF40034F9DC /* 42_PortInputFormatSetup(CombinedMode).swift in Sources */,
 				4EBA80AB24540C8400FC95C4 /* custom_func.swift in Sources */,
-				4EBA80AD24540CF200FC95C4 /* PortInformation.swift in Sources */,
-				4EBA80C324540EBA00FC95C4 /* PortOutputCommandFeedback.swift in Sources */,
-				4EBA80B324540D9100FC95C4 /* HubActions.swift in Sources */,
-				4EBA80BF24540E7A00FC95C4 /* PortValue(Single).swift in Sources */,
-				4EBA80C124540E9200FC95C4 /* PortInputFormat(Single).swift in Sources */,
+				4EA6771424558BCE0034F9DC /* 21_PortInformationRequest.swift in Sources */,
+				4EBA80AD24540CF200FC95C4 /* 43_PortInformation.swift in Sources */,
+				4EBA80C324540EBA00FC95C4 /* 82_PortOutputCommandFeedback.swift in Sources */,
+				4EBA80B324540D9100FC95C4 /* 02_HubActions.swift in Sources */,
+				4EA6771224558B990034F9DC /* 04_HubAttatchedIo.swift in Sources */,
+				4EA6771A24558C4D0034F9DC /* 61_VirtualPortSetup.swift in Sources */,
+				4EBA80BF24540E7A00FC95C4 /* 45_PortValue(Single).swift in Sources */,
+				4EBA80C124540E9200FC95C4 /* 47_PortInputFormat(Single).swift in Sources */,
 				4EBA80AF24540D2C00FC95C4 /* 01_HubProperties.swift in Sources */,
-				4EBA80BB24540E4F00FC95C4 /* GenericErrorMessages.swift in Sources */,
+				4EBA80BB24540E4F00FC95C4 /* 05_GenericErrorMessages.swift in Sources */,
+				4EA6771824558C2C0034F9DC /* 48_PortInputFormat(CombinedMode).swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
