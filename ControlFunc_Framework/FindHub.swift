@@ -13,16 +13,17 @@ import CoreBluetooth
 public let legohubServiceCBUUID = CBUUID(string: "00001623-1212-EFDE-1623-785FEABCD123")
 public let legohubCharacteristicCBUUID = CBUUID(string: "00001624-1212-EFDE-1623-785FEABCD123")
 
-public class BLEManager {
+/*public class BLEManager {
     public var centralManager : CBCentralManager!
     public var bleHandler : FindHub // delegate
     public init() {
         self.bleHandler = FindHub()
         self.centralManager = CBCentralManager(delegate: self.bleHandler, queue:       nil)
     }
-}
+}*/
 public class FindHub: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate  {
     //public var centralManager: CBCentralManager!
+    public var AlertController: UIAlertController!
     
     public override init () {
         super.init()
@@ -67,6 +68,7 @@ public class FindHub: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate  
     }
     public func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         print("connected!")
+        AlertController.dismiss(animated: true, completion: nil)
         //closeAlert()
         //connection.Status[connection.No]=1
         peripheral.delegate = self as CBPeripheralDelegate
@@ -114,7 +116,6 @@ public class FindHub: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate  
         //print("did update value")
         switch characteristic.uuid {
         case legohubCharacteristicCBUUID:
-            //print("didUpdateValue")
             if(characteristic.value==nil){
                 print("value is nil")
             }else{
@@ -132,50 +133,38 @@ public class FindHub: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate  
                     Hub = 2
                 case legohub.Identifier[3]:
                     Hub = 3
-                    /*case DriveHubID:
-                     Hub = 2
-                     case DriveHubID2:
-                     Hub = 2
-                     case SubHubID:
-                     Hub = 3*/
                 default:
                     Hub = -1
                     print("unknown Hub")
                 }
                 switch data[2]{
                 case 0x01:
-                    //HubPropertiesUpdate(data: data, HubID: Hub)
                     HubProperties_Upstream(HubId: Hub, ReceivedData: data)
                 case 0x03:
-                    //HubAlertsUpdate(data: data, HubID: Hub)
                     HubAlerts_Upstream(HubId: Hub, ReceivedData: data)
+                case 0x04:
+                    HubAttatchedIo_Upstream(HubId: Hub, ReceivedData: data)
                 case 0x05:
-                    //GenericErrorMessagesUpdate(data: data, HubID: Hub)
                     GenericErrorMessages_Upstream(HubId: Hub, data: data)
                 case 0x44:
-                    //PortModeInformation(data: data, HubID: Hub )
                     PortModeInformation_Upstream(HubId: Hub, ReceivedData: data)
                 case 0x45:
-                    //PortValueSingleFeedback(data: data, HubID: Hub )
                     PortValue_Single(HubId: Hub, ReceivedData: data)
                 case 0x47:
                     PortInputFormat_Upstream(HubId: Hub, ReceivedData: data)
                 case 0x82:
-                    //PortOutputCommandFeedback_Upstream(data: data, HubID: Hub )
                     PortOutputCommandFeedback_Upstream(HubID: Hub, data: data)
                     
                 default:
                     //print((String(data, radix: 16))
                     print("Unknown Updated value:",data )
                 }
-                //Feedback(data)
-                //let str = String(decoding: characteristicData!, as: UTF8.self)
-                //print("value1:", str)
             }
         default:
             print("Unhandled Characteristic UUID: \(characteristic.uuid)")
         }
     }
+    
 }
 
 public class LegoHubManager{
@@ -189,20 +178,24 @@ public class LegoHubManager{
     public var Button : Bool = false
     public var Battery :Int = 0
     
-    public var alert: UIAlertController!
-    public func alert_hub(SwiftView: UIViewController, No:Int) {
-        self.alert = UIAlertController(title: "Scanning...", message: "Press button on hub \(No).", preferredStyle: .alert)
-        self.alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler:{
+    //public var alert: UIAlertController!
+    public func alert_hub(SwiftView: UIViewController, SwiftSwitch:UISwitch, No:Int) {
+        self.bleHandler.AlertController = UIAlertController(title: "Scanning...", message: "Press button on hub \(No).", preferredStyle: .alert)
+        //self.alert = UIAlertController(title: "Scanning...", message: "Press button on hub \(No).", preferredStyle: .alert)
+        self.bleHandler.AlertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler:{
+        //self.alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler:{
             (action: UIAlertAction!) -> Void in
             //Cancelが押された時の処理
             print("Switch turned Off")
-            
+            SwiftSwitch.setOn(false, animated: true)
             self.centralManager.stopScan()
         }))
-        SwiftView.present(self.alert, animated: true, completion: nil)
+        //SwiftView.present(self.alert, animated: true, completion: nil)
+        SwiftView.present(self.bleHandler.AlertController, animated: true, completion: nil)
     }
     public func closeAlert() {
-        self.alert.dismiss(animated: true, completion: nil)
+        self.bleHandler.AlertController.dismiss(animated: true, completion: nil)
+        //self.alert.dismiss(animated: true, completion: nil)
     }
     
     public init() {

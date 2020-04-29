@@ -85,7 +85,7 @@ struct AttatchedHW{
         case 5:
             self.PortF=0
         default:
-            print("Error in Port")
+            print("Error in Port=\(Port)")
         }
     }
     
@@ -104,7 +104,7 @@ struct AttatchedHW{
         case 5:
             self.PortF=IoTypeId
         default:
-            print("Error in Port")
+            print("Error in Port=\(Port)")
         }
     }
     
